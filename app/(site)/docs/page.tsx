@@ -7,8 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function DocsPage() {
-  return (
-    // Simplemente renderiza el componente SidebarLink, que ahora contiene toda la lógica y la UI.
-    <SidebarLink />
-  );
+  return <SidebarLink />;
 }

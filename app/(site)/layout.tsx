@@ -1,4 +1,4 @@
-// app/layout.js (¡YA NO TIENE "use client"; EN LA PARTE SUPERIOR!)
+// app/layout.js
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -6,9 +6,7 @@ import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import "../globals.css";
-
-// Importa el nuevo componente que acabas de crear
-import { AppProviders } from "@/components/providers/AppProviders"; 
+import { AppProviders } from "@/components/providers/AppProviders";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,12 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-black ${inter.className}`}>
-        {/* Envuelve TODO el contenido que necesita interactividad o contextos de cliente */}
+      <body className={`flex flex-col min-h-screen dark:bg-black ${inter.className}`}>
         <AppProviders>
           <Lines />
           <Header />
-          {children} {/* Aquí se carga el contenido de tus páginas (Inicio, Blog, Docs, etc.) */}
+          {/* WRAP del contenido principal */}
+          <main className="flex-grow">
+            {children}
+          </main>
           <Footer />
           <ScrollToTop />
         </AppProviders>
