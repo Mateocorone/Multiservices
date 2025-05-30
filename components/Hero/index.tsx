@@ -41,7 +41,7 @@ const Hero = () => {
               Calidad, confianza y acabados impecables.
             </p>
 
-            <div className="mt-10 flex justify-center">
+            {/* <div className="mt-10 flex justify-center">
               <button
                 aria-label="get started button"
                 className="rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho
@@ -50,7 +50,7 @@ const Hero = () => {
               >
                 Agenda una Consulta Gratuita
               </button>
-            </div>
+            </div> */}
 
             <p className="mt-7 mb-0 text-black dark:text-white">
               Presupuesto sin compromiso. ¡Empecemos hoy!
