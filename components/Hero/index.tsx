@@ -1,7 +1,6 @@
 "use client";
-// import Image from "next/image";
 import { useState } from "react";
-import { motion } from "framer-motion"; // <-- Asegúrate de que esta importación esté presente
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -13,50 +12,48 @@ const Hero = () => {
   return (
     <motion.section
       id="hero-section"
-      className="overflow-hidden pb-0 pt-35 md:pt-40 xl:pb-0 xl:pt-46"
-      initial={{ opacity: 0, y: 50 }} // Empieza un poco más abajo y transparente
-      whileInView={{ opacity: 1, y: 0 }} // Se anima a su posición y visible
-      transition={{ duration: 0.8, ease: "easeOut" }} // Duración de la animación
-      // CAMBIO AQUÍ: Elimina 'once: true' o cámbialo a 'once: false'
-      // Si quieres que se repita cada vez que entra en vista:
-      viewport={{ amount: 0.2 }} // Sin 'once: true', se repite por defecto
-      // O explícitamente:
-      // viewport={{ once: false, amount: 0.2 }}
+      className="relative flex items-center justify-center text-center py-32 px-4
+      bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 
+      dark:from-blue-900 dark:via-indigo-900 dark:to-purple-900"
+      
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ amount: 0.2 }}
     >
-      <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-        <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-          <div className="w-full text-center">
-            <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-              🔥 Tu Hogar Soñado, Hecho Realidad. Expertos en Reformas Integrales.
-            </h4>
-            <h1 className="mb-5 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-              Transforma tu espacio ideal {" "}
-              <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                con Nosotros
-              </span>
-            </h1>
-            <p className="max-w-3xl mx-auto">
-              Transformamos espacios. Desde pequeñas renovaciones hasta proyectos de construcción completos,
-              ofrecemos soluciones personalizadas para tu vivienda o negocio.
-              Calidad, confianza y acabados impecables.
-            </p>
+      {/* Overlay/filtro para contraste */}
+      <div className="absolute inset-0 bg-white/80 dark:bg-black/70 backdrop-blur-sm"></div>
 
-            {/* <div className="mt-10 flex justify-center">
-              <button
-                aria-label="get started button"
-                className="rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho
-                relative 2xl:-mr-7.5
-                "
-              >
-                Agenda una Consulta Gratuita
-              </button>
-            </div> */}
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
+          🔥 Tu Hogar Soñado, Hecho Realidad. Expertos en Reformas Integrales.
+        </h4>
+        <h1 className="mb-6 text-4xl sm:text-5xl font-extrabold text-black dark:text-white">
+          Transforma tu espacio ideal{" "}
+          <span className="relative inline-block">
+            con{" "}
+            <span className="relative inline-block before:absolute before:bottom-1 before:left-0 before:-z-1 before:h-4 before:w-full before:rounded-md before:bg-blue-200 dark:before:bg-blue-500">
+              Nosotros
+            </span>
+          </span>
+        </h1>
 
-            <p className="mt-7 mb-0 text-black dark:text-white">
-              Presupuesto sin compromiso. ¡Empecemos hoy!
-            </p>
-          </div>
-        </div>
+        <p className="mb-5 text-lg text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
+          Renovamos, construimos y mejoramos tu hogar o negocio con soluciones personalizadas, materiales de calidad y equipo profesional.
+        </p>
+
+        <a
+          href="https://wa.me/593999999999?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20servicios"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-5 rounded-full bg-blue-600 px-7 py-3 font-semibold text-white hover:bg-blue-700 transition"
+        >
+          Solicita tu presupuesto
+        </a>
+
+        <p className="mt-6 text-black dark:text-white">
+          Presupuesto sin compromiso. ¡Empecemos hoy!
+        </p>
       </div>
     </motion.section>
   );

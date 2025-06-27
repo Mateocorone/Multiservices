@@ -12,6 +12,10 @@ const nextConfig = {
       },
     ],
   },
+  devIndicators: {
+    buildActivity: false,
+    autoPrerender: false,
+  },
 };
 
 module.exports = nextConfig;
