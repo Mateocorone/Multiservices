@@ -3,55 +3,53 @@ import { Feature } from "@/types/feature";
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: "/images/icon/icon-01.svg",
-    title: "Renovaciones",
+    icon: "/images/icon/spatula.png",
+    title: "Cartongesso",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Instalación de paneles de yeso para techos y paredes, ofreciendo soluciones rápidas, limpias y personalizadas.",
   },
   {
     id: 2,
-    icon: "/images/icon/icon-02.svg",
-    title: "Bano",
+    icon: "/images/icon/paint-roller.png",
+    title: "Pintura",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Pintura de interiores y exteriores con acabados profesionales y materiales de alta calidad.",
   },
   {
     id: 3,
-    icon: "/images/icon/icon-03.svg",
-    title: "Albanil",
+    icon: "/images/icon/color.png",
+    title: "Resina y Microcemento",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Aplicación decorativa con resina y microcemento para un acabado moderno, liso y resistente.",
   },
   {
     id: 4,
-    icon: "/images/icon/icon-04.svg",
-    title: "Electrisista",
+    icon: "/images/icon/firewall.png",
+    title: "Albañilería",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Trabajos estructurales y de construcción como muros, reformas y reparaciones generales.",
   },
   {
     id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "Carpintero",
+    icon: "/images/icon/sculpture.png",
+    title: "Estuco Veneciano",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Revestimiento artístico que da a las paredes un efecto mármol brillante y elegante.",
   },
   {
     id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Accesorios",
+    icon: "/images/icon/air.png",
+    title: "Aire Acondicionado",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Instalación y mantenimiento de sistemas de aire acondicionado para hogares y negocios.",
   },
-
-  //Creacion de componetenes Card
-  // {
-  //   id: 7,
-  //   icon: "/images/icon/icon-06.svg",
-  //   title: "Accesorios",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-  // },
+  {
+    id: 7,
+    icon: "/images/icon/tool-box.png",
+    title: "Mantenimiento General",
+    description:
+      "Soluciones de mantenimiento para conservar tu espacio en perfectas condiciones.",
+  },
 ];
 
 export default featuresData;

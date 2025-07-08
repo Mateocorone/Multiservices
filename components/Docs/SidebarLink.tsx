@@ -10,19 +10,28 @@ const allInfoContent = {
     content: (
       <>
         <p className="text-gray-700 dark:text-gray-300">
-          En <strong>TotalFix</strong>, somos expertos en dar mantenimiento, arreglos y soluciones...
+          En <strong>TotalFix</strong>, somos expertos en brindar soluciones integrales para hogares y negocios.
+          Con más de 10 años de experiencia, nos especializamos en reformas, mantenimiento y acabados de alta calidad.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300 mt-4">
+          Nuestra misión es transformar tu espacio en un lugar funcional, moderno y estéticamente agradable, siempre con puntualidad, compromiso y profesionalismo.
         </p>
       </>
     )
   },
   '/docs/maintenance-services': {
     label: 'Servicios',
-    title: 'Servicios de Mantenimiento y Reparación',
+    title: 'Servicios que ofrecemos',
     content: (
       <>
-        <p className="text-gray-700 dark:text-gray-300">
-          Ofrecemos un amplio abanico de servicios para clientes residenciales...
-        </p>
+        <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2">
+          <li>Instalación de <strong>paneles de yeso (cartongesso)</strong> y tabiques interiores.</li>
+          <li><strong>Pintura</strong> profesional interior y exterior, incluyendo acabados decorativos.</li>
+          <li>Aplicación de <strong>resina y microcemento</strong> en suelos y paredes.</li>
+          <li>Trabajos de <strong>albañilería</strong> y reparaciones estructurales.</li>
+          <li><strong>Estuco veneciano</strong>: acabados lujosos y brillantes en paredes.</li>
+          <li><strong>Instalación y mantenimiento de aires acondicionados</strong>.</li>
+        </ul>
       </>
     )
   },
@@ -31,8 +40,14 @@ const allInfoContent = {
     title: 'Nuestro Proceso de Trabajo',
     content: (
       <>
-        <p className="text-gray-700 dark:text-gray-300">
-          Creemos en la transparencia, la puntualidad y la buena comunicación...
+        <ol className="list-decimal pl-5 text-gray-700 dark:text-gray-300 space-y-2">
+          <li>Analizamos tu necesidad con una visita o asesoría virtual.</li>
+          <li>Te enviamos una propuesta clara, detallada y sin compromiso.</li>
+          <li>Realizamos los trabajos de forma ordenada, limpia y puntual.</li>
+          <li>Supervisamos la calidad en cada fase y te damos seguimiento post-servicio.</li>
+        </ol>
+        <p className="text-gray-700 dark:text-gray-300 mt-4">
+          Nos enorgullece construir relaciones basadas en confianza y resultados visibles.
         </p>
       </>
     )
@@ -43,12 +58,21 @@ const allInfoContent = {
     content: (
       <>
         <p className="text-gray-700 dark:text-gray-300">
-          ¿Tienes una urgencia o simplemente quieres saber más? Puedes encontrarnos en:
+          ¿Tienes una urgencia, una consulta o necesitas un presupuesto personalizado?
         </p>
+        <p className="text-gray-700 dark:text-gray-300 mt-2">
+          Puedes escribirnos directamente por <strong>WhatsApp</strong> o llenar nuestro formulario de contacto.
+        </p>
+        <ul className="mt-4 text-gray-700 dark:text-gray-300 space-y-1">
+          <li>📍 Atendemos en Novara y sus alrededores.</li>
+          <li>📞 WhatsApp: +39 XXX XXX XXXX</li>
+          <li>📧 Email: contacto@totalfix.it</li>
+        </ul>
       </>
     )
   },
 };
+
 
 export default function SidebarLink() {
   const [activeContentKey, setActiveContentKey] = useState('/docs/introduction');
