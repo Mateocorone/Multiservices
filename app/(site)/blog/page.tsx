@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "This is Blog page for Solid Pro"
 };
 
-const BlogPage = async () => {
+const BlogPage =  () => {
   return (
     <>
       {/* <!-- ===== Blog Grid Start ===== --> */}

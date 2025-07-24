@@ -1,43 +1,49 @@
-// components/Blog/blogData.js (o .ts)
+// components/Blog/blogData.ts
 
 import { Blog } from "@/types/blog";
 
 const BlogData: Blog[] = [
   {
-    _id: 1, // Asegúrate de que cada _id sea único
-    mainImage: "/images/blog/blog-01.png", // Sugerencia: Crea una carpeta 'portfolio' dentro de 'public/images/'
-    title: "Desarrollo Web para E-commerce",
-    metadata: "Diseño y desarrollo de una plataforma de comercio electrónico escalable y optimizada para la conversión, con integración de pasarelas de pago y logística.",
+    _id: 1,
+    mainImage: "/images/icon/card6.png",
+    title: "Instalación de Cartongesso en Interiores",
+    metadata:
+      "Modernizamos techos y paredes usando cartongesso, ideal para crear ambientes acogedores, falsos techos o divisiones elegantes. Diseño limpio y profesional.",
   },
   {
     _id: 2,
-    mainImage: "/images/blog/blog-02.png",
-    title: "Campaña de Branding Integral para Marca Joven",
-    metadata: "Creación de una identidad de marca cohesiva, desde el logotipo y paleta de colores hasta la estrategia de comunicación y materiales de marketing digital.",
+    mainImage: "/images/icon/card5.png",
+    title: "Pintura Profesional de Ambientes",
+    metadata:
+      "Pintamos espacios residenciales y comerciales con acabados lisos o texturizados. Utilizamos pinturas de alta calidad para resultados duraderos y estéticos.",
   },
   {
     _id: 3,
-    mainImage: "/images/blog/blog-03.png",
-    title: "Diseño UI/UX para Aplicación Móvil Innovadora",
-    metadata: "Proceso completo de diseño de experiencia de usuario (UX) e interfaz de usuario (UI) para una aplicación móvil, enfocada en la facilidad de uso y estética moderna.",
+    mainImage: "/images/icon/card3.png",
+    title: "Aplicación de Resina y Microcemento",
+    metadata:
+      "Soluciones modernas para baños, cocinas y escaleras. La resina y el microcemento aportan elegancia, resistencia y fácil mantenimiento, sin juntas visibles.",
   },
   {
     _id: 4,
-    mainImage: "/images/blog/blog-03.png",
-    title: "Estrategia SEO y Marketing",
-    metadata: "Implementación de tácticas SEO avanzadas y creación de contenido de alto valor para mejorar el posicionamiento orgánico y atraer tráfico cualificado al sitio web.",
+    mainImage: "/images/icon/card4.png",
+    title: "Obras de Muratura y Reformas Generales",
+    metadata:
+      "Trabajos de albañilería para construcción, remodelación y refuerzo de estructuras. Reformas personalizadas con materiales duraderos y detalles de calidad.",
   },
   {
     _id: 5,
-    mainImage: "/images/blog/blog-04.png",
-    title: "Software a Medida para Clínica Médica",
-    metadata: "Desarrollo de una solución de software personalizada para la gestión de citas, expedientes de pacientes y optimización de procesos administrativos en clínicas.",
+    mainImage: "/images/icon/card2.png",
+    title: "Estuco Veneziano: Lujo y Distinción",
+    metadata:
+      "Revestimientos artesanales que reflejan la luz y transforman las paredes en superficies elegantes, ideales para escaleras y salones con estilo sofisticado.",
   },
   {
     _id: 6,
-    mainImage: "/images/blog/blog-01.png",
-    title: "Gestión y Estrategia de Redes Sociales",
-    metadata: "Desarrollo de un plan de redes sociales, creación de contenido atractivo y gestión diaria para aumentar la interacción y el alcance de la marca en plataformas digitales.",
+    mainImage: "/images/icon/card1.png",
+    title: "Mantenimiento General y Climatización",
+    metadata:
+      "Soluciones para el hogar: instalaciones eléctricas, aire acondicionado, fontanería y mantenimiento preventivo. Servicio ágil, profesional y confiable.",
   },
 ];
 

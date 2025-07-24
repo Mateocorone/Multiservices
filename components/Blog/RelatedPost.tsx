@@ -6,6 +6,7 @@ import BlogData from "./blogData";
 const RelatedPost = async () => {
   return (
     <>
+      
       <div className="animate_top rounded-md border border-stroke bg-white p-9 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
         <h4 className="mb-7.5 text-2xl font-semibold text-black dark:text-white">
           Related Posts
@@ -17,15 +18,20 @@ const RelatedPost = async () => {
               className="mb-7.5 flex flex-wrap gap-4 xl:flex-nowrap 2xl:gap-6"
               key={key}
             >
-              <div className="max-w-45 relative h-18 w-45">
-                {post.mainImage ? (
-                  <Image fill src={post.mainImage} alt="Blog" />
-                ) : (
-                  "No image"
-                )}
-              </div>
+<div className="flex h-16 w-16 items-center justify-center rounded bg-primary">
+  <Image src={post.mainImage} alt="Blog" width={30} height={30} />
+</div>
+
+
+
               <h5 className="text-md font-medium text-black transition-all duration-300 hover:text-primary dark:text-white dark:hover:text-primary">
-                <Link href={`/blog/blog-details`}>
+              <Link
+  href={
+    post._id === 1
+      ? "/blog/blog-details"
+      : `/blog/blog-details-${post._id}`
+  }
+>
                   {" "}
                   {post.title.slice(0, 40)}...
                 </Link>
@@ -34,6 +40,7 @@ const RelatedPost = async () => {
           ))}
         </div>
       </div>
+
     </>
   );
 };
