@@ -102,35 +102,8 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top"
               >
-                <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                  Newsletter
-                </h4>
-                <p className="mb-4 w-[90%] text-black dark:text-white">
-                  Suscríbete para recibir novedades y promociones.
-                </p>
-                <form action="#">
-                  <div className="relative">
-                    <input
-                      type="email"
-                      placeholder="Correo electrónico"
-                      className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
-                    />
-                    <button
-                      aria-label="signup to newsletter"
-                      className="absolute right-0 p-4"
-                    >
-                      <svg
-                        className="fill-[#757693] hover:fill-primary dark:fill-white"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M3.12 1.17L18.5 9.63l.16.16c.12.17.12.4 0 .57l-.16.16L3.12 18.83a.58.58 0 01-.71-.58V1.54c0-.32.3-.6.71-.58zM4.17 10.83v5.51L15.71 10 4.17 3.65v5.51H8.33v1.67H4.17z" />
-                      </svg>
-                    </button>
-                  </div>
-                </form>
+                
+                   
               </motion.div>
             </div>
           </div>
@@ -146,11 +119,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top"
           >
-            <ul className="flex items-center gap-8 text-black dark:text-white">
-              <li><a href="#">Español</a></li>
-              <li><a href="/politica-privacidad">Política de privacidad</a></li>
-              <li><a href="/contacto">Soporte</a></li>
-            </ul>
+           
           </motion.div>
 
           <motion.div
@@ -161,7 +130,6 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top text-black dark:text-white"
           >
-            <p>&copy; {new Date().getFullYear()} Tu Empresa. Todos los derechos reservados.</p>
           </motion.div>
 
           {/* Socials sin cambios, los mantienes igual o puedes pedirme una actualización */}
