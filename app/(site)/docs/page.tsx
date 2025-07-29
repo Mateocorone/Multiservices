@@ -2,9 +2,10 @@ import SidebarLink from "@/components/Docs/SidebarLink"; // Asegúrate de que la
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Docs Page - Solid SaaS Boilerplate",
-  description: "This is Docs page for Solid Pro - now with dynamic fake content!",
+  title: "Quienes Somos | ReparaYa",
+  description: "Guía completa sobre nuestros servicios, procesos, preguntas frecuentes y recomendaciones de mantenimiento en ReparaYa.",
 };
+
 
 export default function DocsPage() {
   return <SidebarLink />;

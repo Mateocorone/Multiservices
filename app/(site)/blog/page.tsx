@@ -3,10 +3,8 @@ import BlogItem from "@/components/Blog/BlogItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page - Solid SaaS Boilerplate",
-
-  // other metadata
-  description: "This is Blog page for Solid Pro"
+  title: "Galería | ReparaYa ",
+  description: "Descubre artículos, noticias y consejos útiles sobre reformas, pintura, microcemento, mantenimiento del hogar y más en el blog de ReparaYa.",
 };
 
 const BlogPage =  () => {

@@ -89,7 +89,6 @@ const Footer = () => {
                 <ul>
                   <li><a href="/quienes-somos" className="mb-3 inline-block hover:text-primary">Quiénes somos</a></li>
                   <li><a href="/blog" className="mb-3 inline-block hover:text-primary">Blog</a></li>
-                  <li><a href="/politica-privacidad" className="mb-3 inline-block hover:text-primary">Privacidad</a></li>
                 </ul>
               </motion.div>
 

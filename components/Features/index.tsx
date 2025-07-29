@@ -23,9 +23,9 @@ const Feature = () => {
           headerInfo={{
             title: "Nuestros Servicios",
             subtitle: "Soluciones completas para cada rincón de tu hogar",
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+            description: `Creamos espacios funcionales, modernos y a tu medida. Porque tu casa merece lo mejor.
+
+`,
           }}
         />
         {/* */}

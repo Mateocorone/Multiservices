@@ -6,11 +6,10 @@ import FunFact from "@/components/FunFact";
 import Blog from "@/components/Blog";
 
 export const metadata: Metadata = {
-  title: "Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate",
+  title: "ReparaYa | Soluciones para tu hogar y negocio",
+  description: "ReparaYa ofrece servicios profesionales de cartongesso, pintura, resina, microcemento, aire acondicionado y más. Calidad, rapidez y confianza en cada proyecto.",
+}
 
-  // other metadata
-  description: "This is Home for Solid Pro"
-};
 
 export default function Home() {
   return (
