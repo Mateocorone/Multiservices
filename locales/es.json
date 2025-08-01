@@ -5,7 +5,7 @@
     "description": "Un texto de ejemplo para la descripción de la sección del encabezado."
   },
   "menu": {
-    "home": "Home",
+    "home": "Inicio",
     "services": "Servicios",
     "gallery": "Galería",
     "aboutUs": "Quienes Somos"
@@ -71,5 +71,44 @@
     "description": "Renovamos, construimos y mejoramos tu hogar o negocio con soluciones personalizadas, materiales de calidad y equipo profesional.",
     "button": "Solicita tu presupuesto",
     "cta": "Presupuesto sin compromiso. ¡Empecemos hoy!"
+  },
+  "aboutUs": {
+    "sidebarLinks": {
+      "whoWeAre": "Quiénes Somos",
+      "services": "Servicios",
+      "howWeWork": "Cómo Trabajamos",
+      "contact": "Contacto"
+    },
+    "whoWeAre": {
+      "title": "Acerca de Multiservicios TotalFix",
+      "text1": "En <strong>TotalFix</strong>, somos expertos en brindar soluciones integrales para hogares y negocios. Con más de 10 años de experiencia, nos especializamos en reformas, mantenimiento y acabados de alta calidad.",
+      "text2": "Nuestra misión es transformar tu espacio en un lugar funcional, moderno y estéticamente agradable, siempre con puntualidad, compromiso y profesionalismo."
+    },
+    "services": {
+      "title": "Servicios que ofrecemos",
+      "list1": "Instalación de <strong>paneles de yeso (cartongesso)</strong> y tabiques interiores.",
+      "list2": "<strong>Pintura</strong> profesional interior y exterior, incluyendo acabados decorativos.",
+      "list3": "Aplicación de <strong>resina y microcemento</strong> en suelos y paredes.",
+      "list4": "Trabajos de <strong>albañilería</strong> y reparaciones estructurales.",
+      "list5": "<strong>Estuco veneciano</strong>: acabados lujosos y brillantes en paredes.",
+      "list6": "<strong>Instalación y mantenimiento de aires acondicionados</strong>.",
+      "list7": "Soluciones de mantenimiento para conservar tu espacio en perfectas condiciones."
+    },
+    "howWeWork": {
+      "title": "Nuestro Proceso de Trabajo",
+      "list1": "Analizamos tu necesidad con una visita o asesoría virtual.",
+      "list2": "Te enviamos una propuesta clara, detallada y sin compromiso.",
+      "list3": "Realizamos los trabajos de forma ordenada, limpia y puntual.",
+      "list4": "Supervisamos la calidad en cada fase y te damos seguimiento post-servicio.",
+      "text1": "Nos enorgullece construir relaciones basadas en confianza y resultados visibles."
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "text1": "¿Tienes una urgencia, una consulta o necesitas un presupuesto personalizado?",
+      "text2": "Puedes escribirnos directamente por <strong>WhatsApp</strong> o llenar nuestro formulario de contacto.",
+      "text3": "Atendemos en Novara y sus alrededores.",
+      "text4": "WhatsApp: +39 XXX XXX XXXX",
+      "text5": "Email: contacto@totalfix.it"
+    }
   }
 }

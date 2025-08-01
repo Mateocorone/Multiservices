@@ -71,5 +71,44 @@
     "description": "We renovate, build, and improve your home or business with custom solutions, quality materials, and a professional team.",
     "button": "Request a quote",
     "cta": "No-obligation quote. Let's get started today!"
+  },
+  "aboutUs": {
+    "sidebarLinks": {
+      "whoWeAre": "Who We Are",
+      "services": "Services",
+      "howWeWork": "How We Work",
+      "contact": "Contact"
+    },
+    "whoWeAre": {
+      "title": "About Multiservicios TotalFix",
+      "text1": "At <strong>TotalFix</strong>, we are experts in providing comprehensive solutions for homes and businesses. With over 10 years of experience, we specialize in high-quality renovations, maintenance, and finishes.",
+      "text2": "Our mission is to transform your space into a functional, modern, and aesthetically pleasing place, always with punctuality, commitment, and professionalism."
+    },
+    "services": {
+      "title": "Services we offer",
+      "list1": "Installation of <strong>drywall (plasterboard)</strong> and interior partitions.",
+      "list2": "Professional interior and exterior <strong>painting</strong>, including decorative finishes.",
+      "list3": "Application of <strong>resin and microcement</strong> on floors and walls.",
+      "list4": "<strong>Masonry</strong> work and structural repairs.",
+      "list5": "<strong>Venetian stucco</strong>: luxurious and shiny marble-effect wall finishes.",
+      "list6": "<strong>Air conditioning installation and maintenance</strong>.",
+      "list7": "Maintenance solutions to keep your space in perfect condition."
+    },
+    "howWeWork": {
+      "title": "Our Work Process",
+      "list1": "We analyze your needs with a visit or virtual consultation.",
+      "list2": "We send you a clear, detailed, and non-binding proposal.",
+      "list3": "We carry out the work in an organized, clean, and punctual manner.",
+      "list4": "We supervise quality at every stage and provide post-service follow-up.",
+      "text1": "We pride ourselves on building relationships based on trust and visible results."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "text1": "Do you have an emergency, a question, or need a personalized quote?",
+      "text2": "You can write to us directly on <strong>WhatsApp</strong> or fill out our contact form.",
+      "text3": "We serve Novara and its surroundings.",
+      "text4": "WhatsApp: +39 XXX XXX XXXX",
+      "text5": "Email: contacto@totalfix.it"
+    }
   }
 }

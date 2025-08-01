@@ -65,11 +65,50 @@
   },
   "hero": {
     "subtitle": "🔥 La Tua Casa dei Sogni, Diventata Realtà. Esperti in Ristrutturazioni Integrali.",
-    "title_part1": "Trasforma il tuo spazio ideale",
+    "title_part1": "Trasforma il tuo spazio ideal",
     "title_part2": "con",
     "title_part3": "Noi",
     "description": "Rinnoviamo, costruiamo e miglioriamo la tua casa o il tuo ufficio con soluzioni personalizzate, materiali di qualità e un team professionale.",
     "button": "Richiedi un preventivo",
     "cta": "Preventivo senza impegno. Iniziamo oggi!"
+  },
+  "aboutUs": {
+    "sidebarLinks": {
+      "whoWeAre": "Chi siamo",
+      "services": "Servizi",
+      "howWeWork": "Come lavoriamo",
+      "contact": "Contattaci"
+    },
+    "whoWeAre": {
+      "title": "Chi siamo Multiservizi TotalFix",
+      "text1": "Noi di <strong>TotalFix</strong>, siamo esperti nel fornire soluzioni complete per case e aziende. Con oltre 10 anni di esperienza, siamo specializzati in ristrutturazioni, manutenzioni e finiture di alta qualità.",
+      "text2": "La nostra missione è trasformare il tuo spazio in un luogo funzionale, moderno ed esteticamente gradevole, sempre con puntualità, impegno e professionalità."
+    },
+    "services": {
+      "title": "Servizi che offriamo",
+      "list1": "Installazione di <strong>pannelli in cartongesso</strong> e pareti divisorie interne.",
+      "list2": "<strong>Pittura</strong> professionale per interni ed esterni, incluse finiture decorative.",
+      "list3": "Applicazione di <strong>resina e microcemento</strong> su pavimenti e pareti.",
+      "list4": "Lavori di <strong>muratura</strong> e riparazioni strutturali.",
+      "list5": "<strong>Stucco veneziano</strong>: finiture murarie lussuose e lucide effetto marmo.",
+      "list6": "<strong>Installazione e manutenzione di condizionatori</strong>.",
+      "list7": "Soluzioni di manutenzione per mantenere il tuo spazio in perfette condizioni."
+    },
+    "howWeWork": {
+      "title": "Il nostro processo di lavoro",
+      "list1": "Analizziamo le tue esigenze con un sopralluogo o una consulenza virtuale.",
+      "list2": "Ti inviamo una proposta chiara, dettagliata e senza impegno.",
+      "list3": "Eseguiamo i lavori in modo ordinato, pulito e puntuale.",
+      "list4": "Supervisioniamo la qualità in ogni fase e ti forniamo un follow-up post-servizio.",
+      "text1": "Siamo orgogliosi de costruire relazioni basate sulla fiducia e sui risultati visibili."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "text1": "Hai un'emergenza, una domanda o hai bisogno di un preventivo personalizzato?",
+      "text2": "Puoi scriverci direttamente su <strong>WhatsApp</strong> o compilare il nostro modulo di contatto.",
+      "text3": "Operiamo a Novara e dintorni.",
+      "text4": "WhatsApp: +39 XXX XXX XXXX",
+      "text5": "Email: contacto@totalfix.it"
+    }
   }
 }

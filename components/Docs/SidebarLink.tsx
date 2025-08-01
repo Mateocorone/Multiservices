@@ -2,89 +2,79 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-
-const allInfoContent = {
-  '/docs/introduction': {
-    label: 'Quiénes Somos',
-    title: 'Acerca de Multiservicios TotalFix',
-    content: (
-      <>
-        <p className="text-gray-700 dark:text-gray-300">
-          En <strong>TotalFix</strong>, somos expertos en brindar soluciones integrales para hogares y negocios.
-          Con más de 10 años de experiencia, nos especializamos en reformas, mantenimiento y acabados de alta calidad.
-        </p>
-        <p className="text-gray-700 dark:text-gray-300 mt-4">
-          Nuestra misión es transformar tu espacio en un lugar funcional, moderno y estéticamente agradable, siempre con puntualidad, compromiso y profesionalismo.
-        </p>
-      </>
-    )
-  },
-  '/docs/maintenance-services': {
-    label: 'Servicios',
-    title: 'Servicios que ofrecemos',
-    content: (
-      <>
-        <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2">
-          <li>Instalación de <strong>paneles de yeso (cartongesso)</strong> y tabiques interiores.</li>
-          <li><strong>Pintura</strong> profesional interior y exterior, incluyendo acabados decorativos.</li>
-          <li>Aplicación de <strong>resina y microcemento</strong> en suelos y paredes.</li>
-          <li>Trabajos de <strong>albañilería</strong> y reparaciones estructurales.</li>
-          <li><strong>Estuco veneciano</strong>: acabados lujosos y brillantes en paredes.</li>
-          <li><strong>Instalación y mantenimiento de aires acondicionados</strong>.</li>
-        </ul>
-      </>
-    )
-  },
-  '/docs/how-we-work': {
-    label: 'Cómo Trabajamos',
-    title: 'Nuestro Proceso de Trabajo',
-    content: (
-      <>
-        <ol className="list-decimal pl-5 text-gray-700 dark:text-gray-300 space-y-2">
-          <li>Analizamos tu necesidad con una visita o asesoría virtual.</li>
-          <li>Te enviamos una propuesta clara, detallada y sin compromiso.</li>
-          <li>Realizamos los trabajos de forma ordenada, limpia y puntual.</li>
-          <li>Supervisamos la calidad en cada fase y te damos seguimiento post-servicio.</li>
-        </ol>
-        <p className="text-gray-700 dark:text-gray-300 mt-4">
-          Nos enorgullece construir relaciones basadas en confianza y resultados visibles.
-        </p>
-      </>
-    )
-  },
-  '/docs/contact': {
-    label: 'Contacto',
-    title: 'Contáctanos',
-    content: (
-      <>
-        <p className="text-gray-700 dark:text-gray-300">
-          ¿Tienes una urgencia, una consulta o necesitas un presupuesto personalizado?
-        </p>
-        <p className="text-gray-700 dark:text-gray-300 mt-2">
-          Puedes escribirnos directamente por <strong>WhatsApp</strong> o llenar nuestro formulario de contacto.
-        </p>
-        <ul className="mt-4 text-gray-700 dark:text-gray-300 space-y-1">
-          <li>📍 Atendemos en Novara y sus alrededores.</li>
-          <li>📞 WhatsApp: +39 XXX XXX XXXX</li>
-          <li>📧 Email: contacto@totalfix.it</li>
-        </ul>
-      </>
-    )
-  },
-};
-
+import { useLanguage } from '@/components/providers/LanguageProvider';
 
 export default function SidebarLink() {
-  const [activeContentKey, setActiveContentKey] = useState('/docs/introduction');
-  const currentContent = allInfoContent[activeContentKey];
+  const { t } = useLanguage();
+  const [activeContentKey, setActiveContentKey] = useState('whoWeAre');
 
-  const sidebarLinksData = Object.entries(allInfoContent).map(([href, { label }]) => ({ href, label }));
+  const sidebarLinksData = [
+    { href: 'whoWeAre', label: t('aboutUs.sidebarLinks.whoWeAre') },
+    { href: 'services', label: t('aboutUs.sidebarLinks.services') },
+    { href: 'howWeWork', label: t('aboutUs.sidebarLinks.howWeWork') },
+    { href: 'contact', label: t('aboutUs.sidebarLinks.contact') },
+  ];
+
+  const renderContent = () => {
+    switch (activeContentKey) {
+      case 'whoWeAre':
+        return (
+          <>
+            <p className="text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: t('aboutUs.whoWeAre.text1') }} />
+            <p className="text-gray-700 dark:text-gray-300 mt-4" dangerouslySetInnerHTML={{ __html: t('aboutUs.whoWeAre.text2') }} />
+          </>
+        );
+      case 'services':
+        return (
+          <>
+            <ul className="list-disc pl-5 text-gray-700 dark:text-gray-300 space-y-2">
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list1') }} />
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list2') }} />
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list3') }} />
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list4') }} />
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list5') }} />
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list6') }} />
+              <li dangerouslySetInnerHTML={{ __html: t('aboutUs.services.list7') }} />
+            </ul>
+          </>
+        );
+      case 'howWeWork':
+        return (
+          <>
+            <ol className="list-decimal pl-5 text-gray-700 dark:text-gray-300 space-y-2">
+              <li>{t('aboutUs.howWeWork.list1')}</li>
+              <li>{t('aboutUs.howWeWork.list2')}</li>
+              <li>{t('aboutUs.howWeWork.list3')}</li>
+              <li>{t('aboutUs.howWeWork.list4')}</li>
+            </ol>
+            <p className="text-gray-700 dark:text-gray-300 mt-4">
+              {t('aboutUs.howWeWork.text1')}
+            </p>
+          </>
+        );
+      case 'contact':
+        return (
+          <>
+            <p className="text-gray-700 dark:text-gray-300">
+              {t('aboutUs.contact.text1')}
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 mt-2" dangerouslySetInnerHTML={{ __html: t('aboutUs.contact.text2') }} />
+            <ul className="mt-4 text-gray-700 dark:text-gray-300 space-y-1">
+              <li>📍 {t('aboutUs.contact.text3')}</li>
+              <li>📞 {t('aboutUs.contact.text4')}</li>
+              <li>📧 {t('aboutUs.contact.text5')}</li>
+            </ul>
+          </>
+        );
+      default:
+        return null;
+    }
+  };
 
   return (
     <section className="bg-white dark:bg-[#111827] text-black dark:text-white pt-16 pb-10 lg:pt-20 lg:pb-12 xl:pt-24 xl:pb-14">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <div className="flex flex-col lg:flex-row gap-8">
-          
           {/* Barra lateral */}
           <div className="lg:w-1/4 xl:w-1/5 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
             <ul className="space-y-2">
@@ -114,10 +104,10 @@ export default function SidebarLink() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <h1 className="text-3xl lg:text-4xl font-bold mb-6 text-black dark:text-white">
-              {currentContent.title}
+              {t(`aboutUs.${activeContentKey}.title`)}
             </h1>
             <div className="prose text-black dark:text-gray-200 max-w-none">
-              {currentContent.content}
+              {renderContent()}
             </div>
           </motion.div>
         </div>
