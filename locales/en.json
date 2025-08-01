@@ -1,0 +1,75 @@
+{
+  "header": {
+    "title": "Header Title",
+    "subtitle": "Header Subtitle",
+    "description": "An example text for the header section description."
+  },
+  "menu": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "aboutUs": "About Us"
+  },
+  "button": {
+    "label": "Change Language",
+    "whatsapp": "Contact via WhatsApp"
+  },
+  "features": {
+    "title": "Our Services",
+    "subtitle": "Complete solutions for every corner of your home",
+    "description": "We create functional, modern spaces tailored to you. Because your home deserves the best.",
+    "feature1": {
+      "title": "Drywall",
+      "text": "Installation of plasterboard panels for ceilings and walls, offering fast, clean, and customized solutions."
+    },
+    "feature2": {
+      "title": "Painting",
+      "text": "Interior and exterior painting with professional finishes and high-quality materials."
+    },
+    "feature3": {
+      "title": "Resin and Microcement",
+      "text": "Decorative application with resin and microcement for a modern, smooth, and resistant finish."
+    },
+    "feature4": {
+      "title": "Masonry",
+      "text": "Structural and construction work such as walls, renovations, and general repairs."
+    },
+    "feature5": {
+      "title": "Venetian Stucco",
+      "text": "Artistic coating that gives walls a shiny and elegant marble effect."
+    },
+    "feature6": {
+      "title": "Air Conditioning",
+      "text": "Installation and maintenance of air conditioning systems for homes and businesses."
+    },
+    "feature7": {
+      "title": "General Maintenance",
+      "text": "Maintenance solutions to keep your space in perfect condition."
+    }
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Latest news and articles",
+    "readMore": "Read more"
+  },
+  "relatedPosts": {
+    "title": "Related Posts"
+  },
+  "sharePost": {
+    "title": "Share Post"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Discover some of our recent work",
+    "description": "We transform spaces with modern, elegant and functional finishes. See how we make it a reality."
+  },
+  "hero": {
+    "subtitle": "🔥 Your Dream Home, Made Reality. Experts in Comprehensive Renovations.",
+    "title_part1": "Transform your ideal space",
+    "title_part2": "with",
+    "title_part3": "Us",
+    "description": "We renovate, build, and improve your home or business with custom solutions, quality materials, and a professional team.",
+    "button": "Request a quote",
+    "cta": "No-obligation quote. Let's get started today!"
+  }
+}

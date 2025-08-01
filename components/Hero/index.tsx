@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useLanguage } from '@/components/providers/LanguageProvider'; // Importa el hook de idioma
 
 const Hero = () => {
   const [email, setEmail] = useState("");
+  const { t } = useLanguage(); // Obtiene la función de traducción
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,20 +28,20 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-          🔥 Tu Hogar Soñado, Hecho Realidad. Expertos en Reformas Integrales.
+          {t('hero.subtitle')}
         </h4>
         <h1 className="mb-6 text-4xl sm:text-5xl font-extrabold text-black dark:text-white">
-          Transforma tu espacio ideal{" "}
+          {t('hero.title_part1')}{" "}
           <span className="relative inline-block">
-            con{" "}
+            {t('hero.title_part2')}{" "}
             <span className="relative inline-block before:absolute before:bottom-1 before:left-0 before:-z-1 before:h-4 before:w-full before:rounded-md before:bg-blue-200 dark:before:bg-blue-500">
-              Nosotros
+              {t('hero.title_part3')}
             </span>
           </span>
         </h1>
 
         <p className="mb-5 text-lg text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
-          Renovamos, construimos y mejoramos tu hogar o negocio con soluciones personalizadas, materiales de calidad y equipo profesional.
+          {t('hero.description')}
         </p>
 
         <a
@@ -48,11 +50,11 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="inline-block mt-5 rounded-full bg-blue-600 px-7 py-3 font-semibold text-white hover:bg-blue-700 transition"
         >
-          Solicita tu presupuesto
+          {t('hero.button')}
         </a>
 
         <p className="mt-6 text-black dark:text-white">
-          Presupuesto sin compromiso. ¡Empecemos hoy!
+          {t('hero.cta')}
         </p>
       </div>
     </motion.section>

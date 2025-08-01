@@ -20,11 +20,11 @@ const Blog = () => {
         {/* */}
         <div className="animate_top mx-auto text-center">
           <SectionHeader
-            headerInfo={{
-              title: `Galería`,
-              subtitle: `Descubre algunos de nuestros trabajos recientes`,
-              description: `Transformamos espacios con acabados modernos, elegantes y funcionales. Mira cómo lo hacemos realidad.`,
-            }}
+            // headerInfo={{
+            //   title: `Galería`,
+            //   subtitle: `Descubre algunos de nuestros trabajos recientes`,
+            //   description: `Transformamos espacios con acabados modernos, elegantes y funcionales. Mira cómo lo hacemos realidad.`,
+            // }}
           />
         </div>
         {/* */}

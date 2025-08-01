@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+// --- COMIENZO DE CAMBIOS ---
+import { useLanguage } from '@/components/providers/LanguageProvider'; // 1. Agrega esta importación
+import LanguageSwitcher from "@/components/LanguageSwitcher"; // 2. Agrega esta importación
+// --- FIN DE CAMBIOS ---
 
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
@@ -13,6 +17,7 @@ const Header = () => {
   const [stickyMenu, setStickyMenu] = useState(false);
 
   const pathUrl = usePathname();
+  const { t } = useLanguage(); // 3. Obtiene la función de traducción
 
   // Sticky menu
   const handleStickyMenu = () => {
@@ -25,6 +30,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleStickyMenu);
+    return () => window.removeEventListener("scroll", handleStickyMenu);
   });
 
   return (
@@ -35,8 +41,8 @@ const Header = () => {
           : ""
       }`}
     >
-<div className="relative mx-auto max-w-c-1390 flex flex-col xl:flex-row items-center justify-between px-4 md:px-8 2xl:px-0">
-<div className="flex items-center justify-start xl:w-auto">
+      <div className="relative mx-auto max-w-c-1390 flex flex-col xl:flex-row items-center justify-between px-4 md:px-8 2xl:px-0">
+        <div className="flex items-center justify-start xl:w-auto">
           <a href="/">
             <Image
               src="/images/logo/logo-dark.svg"
@@ -54,7 +60,7 @@ const Header = () => {
             />
           </a>
 
-          {/* <!-- Hamburger Toggle BTN --> */}
+          {/* */}
           <button
             aria-label="hamburger Toggler"
             className="block xl:hidden"
@@ -92,10 +98,10 @@ const Header = () => {
               </span>
             </span>
           </button>
-          {/* <!-- Hamburger Toggle BTN --> */}
+          {/* */}
         </div>
 
-        {/* Nav Menu Start   */}
+        {/* Nav Menu Start  */}
         <div
           className={`invisible h-0 w-full items-center justify-between xl:visible xl:flex xl:h-auto xl:w-full ${
             navigationOpen &&
@@ -112,7 +118,7 @@ const Header = () => {
                         onClick={() => setDropdownToggler(!dropdownToggler)}
                         className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
                       >
-                        {menuItem.title}
+                        {t(menuItem.title)} {/* 4. Usa la función t() aquí */}
                         <span>
                           <svg
                             className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
@@ -129,7 +135,7 @@ const Header = () => {
                       >
                         {menuItem.submenu.map((item, key) => (
                           <li key={key} className="hover:text-primary">
-                            <Link href={item.path || "#"}>{item.title}</Link>
+                            <Link href={item.path || "#"}>{t(item.title)}</Link> {/* 5. Usa la función t() aquí también */}
                           </li>
                         ))}
                       </ul>
@@ -143,18 +149,17 @@ const Header = () => {
                           : "hover:text-primary"
                       }
                     >
-                      {menuItem.title}
+                      {t(menuItem.title)} {/* 6. Y aquí */}
                     </Link>
                   )}
                 </li>
               ))}
             </ul>
           </nav>
-
+          
           <div className="mt-7 flex items-center gap-6 xl:mt-0">
-            <ThemeToggler />
-
-            
+            <LanguageSwitcher /> {/* 7. Coloca el botón de idioma aquí */}
+            <ThemeToggler /> {/* 8. Tu botón de tema original está intacto */}
           </div>
         </div>
       </div>

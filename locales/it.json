@@ -1,0 +1,75 @@
+{
+  "header": {
+    "title": "Titolo dell'Intestazione",
+    "subtitle": "Sottotitolo dell'Intestazione",
+    "description": "Un testo di esempio per la descrizione della sezione dell'intestazione."
+  },
+  "menu": {
+    "home": "Home",
+    "services": "Servizi",
+    "gallery": "Galleria",
+    "aboutUs": "Chi siamo"
+  },
+  "button": {
+    "label": "Cambia lingua",
+    "whatsapp": "Contattaci su WhatsApp"
+  },
+  "features": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Soluzioni complete per ogni angolo della tua casa",
+    "description": "Creiamo spazi funzionali, moderni e su misura per te. Perché la tua casa merita il meglio.",
+    "feature1": {
+      "title": "Cartongesso",
+      "text": "Installazione di pannelli in cartongesso per soffitti e pareti, offrendo soluzioni rapide, pulite e personalizzate."
+    },
+    "feature2": {
+      "title": "Pittura",
+      "text": "Pittura di interni ed esterni con finiture professionali e materiali di alta qualità."
+    },
+    "feature3": {
+      "title": "Resina e Microcemento",
+      "text": "Applicazione decorativa con resina e microcemento per una finitura moderna, liscia e resistente."
+    },
+    "feature4": {
+      "title": "Muratura",
+      "text": "Lavori strutturali e di costruzione come muri, ristrutturazioni e riparazioni generali."
+    },
+    "feature5": {
+      "title": "Stucco Veneziano",
+      "text": "Rivestimento artistico che dona alle pareti un effetto marmo lucido ed elegante."
+    },
+    "feature6": {
+      "title": "Aria Condizionata",
+      "text": "Installazione e manutenzione di sistemi di aria condizionata per case e aziende."
+    },
+    "feature7": {
+      "title": "Manutenzione Generale",
+      "text": "Soluzioni di manutenzione per mantenere il tuo spazio in perfette condizioni."
+    }
+  },
+  "blog": {
+    "title": "Il Nostro Blog",
+    "subtitle": "Ultime notizie e articoli",
+    "readMore": "Leggi di più"
+  },
+  "relatedPosts": {
+    "title": "Articoli Correlati"
+  },
+  "sharePost": {
+    "title": "Condividi Articolo"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "subtitle": "Scopri alcuni dei nostri lavori recenti",
+    "description": "Trasformiamo gli spazi con finiture moderne, eleganti e funzionali. Scopri come lo rendiamo realtà."
+  },
+  "hero": {
+    "subtitle": "🔥 La Tua Casa dei Sogni, Diventata Realtà. Esperti in Ristrutturazioni Integrali.",
+    "title_part1": "Trasforma il tuo spazio ideale",
+    "title_part2": "con",
+    "title_part3": "Noi",
+    "description": "Rinnoviamo, costruiamo e miglioriamo la tua casa o il tuo ufficio con soluzioni personalizzate, materiali di qualità e un team professionale.",
+    "button": "Richiedi un preventivo",
+    "cta": "Preventivo senza impegno. Iniziamo oggi!"
+  }
+}
