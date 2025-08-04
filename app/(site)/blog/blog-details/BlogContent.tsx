@@ -23,12 +23,7 @@ const BlogContent = () => {
         {t('blogDetails_1.title')}
       </h2>
 
-      <ul className="mb-9 flex flex-wrap gap-5 2xl:gap-7.5">
-        <li>
-          <span className="text-black dark:text-white">{t('blogDetails_1.author')}</span>{" "}
-          Jhon Doe
-        </li>
-      </ul>
+      
 
       {/* Aquí se aplica el estilo original `space-y-4` */}
       <div className="blog-details space-y-4 text-black dark:text-white">

@@ -117,7 +117,7 @@
     "title": "Instalación Profesional de Cartongesso para Interiores Elegantes",
     "metadata_title": "Página de Detalles del Blog - Solid SaaS Boilerplate",
     "metadata_description": "Esta es la página de detalles del blog para Solid Pro",
-    "author": "Autor:",
+    "": "Autor:",
     "body_p1": "Mejoramos la estética y funcionalidad de techos y paredes con soluciones de cartongesso adaptadas a tus espacios.",
     "body_p2": "El cartongesso es una técnica versátil para crear formas, techos falsos y divisiones internas. En nuestros trabajos cuidamos cada detalle, ofreciendo acabados precisos y elegantes. Desde molduras clásicas hasta diseños minimalistas, adaptamos el cartongesso a cada estilo de hogar o comercio."
   },
@@ -125,7 +125,7 @@
   
   "blogDetails_2": {
     "title": "Pintura Profesional de Ambientes",
-    "author": "Autor:",
+    "": "Autor:",
     "body_p1": "Pintamos espacios residenciales y comerciales con acabados lisos o texturizados.",
     "body_p2": "Utilizamos pinturas de alta calidad para lograr resultados duraderos, elegantes y adaptados a cada ambiente."
   },
@@ -133,7 +133,7 @@
   
   "blogDetails_3": {
     "title": "Aplicación de Resina y Microcemento",
-    "author": "Autor:",
+    "": "Autor:",
     "body_p1": "Soluciones modernas para baños, cocinas y escaleras.",
     "body_p2": "La resina y el microcemento aportan elegancia, resistencia y fácil mantenimiento sin juntas visibles."
   },
@@ -141,7 +141,7 @@
   
   "blogDetails_4": {
     "title": "Obras de Muratura y Reformas Generales",
-    "author": "Autor:",
+    "": "Autor:",
     "body_p1": "Trabajos de albañilería para construcción, remodelación y refuerzo de estructuras.",
     "body_p2": "Reformas personalizadas con materiales duraderos y atención al detalle."
   },
@@ -149,7 +149,7 @@
   
   "blogDetails_5": {
     "title": "Estuco Veneziano: Lujo y Distinción",
-    "author": "Autor:",
+    "": "Autor:",
     "body_p1": "Revestimientos artesanales que reflejan la luz y embellecen las superficies.",
     "body_p2": "Ideales para espacios sofisticados como salones y escaleras."
   },
@@ -157,7 +157,7 @@
   
   "blogDetails_6": {
     "title": "Mantenimiento General y Climatización",
-    "author": "Autor:",
+    "": "Autor:",
     "body_p1": "Instalaciones eléctricas, fontanería, climatización y mantenimiento integral del hogar.",
     "body_p2": "Servicio ágil, profesional y confiable para garantizar el buen funcionamiento de tu espacio."
   },

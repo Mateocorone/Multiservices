@@ -116,7 +116,6 @@
     "title": "Professional Drywall Installation for Elegant Interiors",
     "metadata_title": "Blog Details Page - Solid SaaS Boilerplate",
     "metadata_description": "This is Blog details page for Solid Pro",
-    "author": "Author:",
     "body_p1": "We improve the aesthetics and functionality of ceilings and walls with drywall solutions adapted to your spaces.",
     "body_p2": "Drywall is a versatile technique for creating shapes, false ceilings, and internal divisions. In our work, we take care of every detail, offering precise and elegant finishes. From classic moldings to minimalist designs, we adapt drywall to every style of home or business."
   },
@@ -124,7 +123,6 @@
   
   "blogDetails_2": {
     "title": "Professional Painting Services",
-    "author": "Author:",
     "body_p1": "We paint residential and commercial spaces with smooth or textured finishes.",
     "body_p2": "We use high-quality paints to achieve durable, elegant, and personalized results for every room."
   
@@ -133,7 +131,6 @@
 
   "blogDetails_3": {
     "title": "Application of Resin and Microcement",
-    "author": "Author:",
     "body_p1": "Modern solutions for bathrooms, kitchens, and stairs.",
     "body_p2": "Resin and microcement provide elegance, resistance, and easy maintenance without visible joints."
   },
@@ -141,7 +138,6 @@
   
   "blogDetails_4": {
     "title": "Masonry Works and General Renovations",
-    "author": "Author:",
     "body_p1": "Masonry work for construction, remodeling, and structural reinforcement.",
     "body_p2": "Custom renovations with durable materials and attention to detail."
   },
@@ -149,7 +145,7 @@
   
   "blogDetails_5": {
     "title": "Venetian Stucco: Luxury and Distinction",
-    "author": "Author:",
+    "": ":",
     "body_p1": "Artisanal coatings that reflect light and embellish surfaces.",
     "body_p2": "Ideal for sophisticated spaces such as living rooms and staircases."
   },
@@ -157,7 +153,7 @@
   
   "blogDetails_6": {
     "title": "General Maintenance and Climate Control",
-    "author": "Author:",
+    "": ":",
     "body_p1": "Electrical installations, plumbing, air conditioning, and comprehensive home maintenance.",
     "body_p2": "Agile, professional, and reliable service to ensure the proper functioning of your space."
   },

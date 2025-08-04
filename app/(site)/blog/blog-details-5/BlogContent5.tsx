@@ -23,12 +23,7 @@ const BlogContent5 = () => {
         {t('blogDetails_5.title')}
       </h2>
 
-      <ul className="mb-9 flex flex-wrap gap-5 2xl:gap-7.5">
-        <li>
-          <span className="text-black dark:text-white">{t('blogDetails_5.author')}: </span>
-          Paula Martínez
-        </li>
-      </ul>
+      
 
       <div className="blog-details space-y-4 text-black dark:text-white">
         <p>

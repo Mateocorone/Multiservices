@@ -35,7 +35,8 @@ const RelatedPost = () => {
                   }
                 >
                   {" "}
-                  {post.title.slice(0, 40)}...
+                  {/* AQUÍ ESTÁ EL CAMBIO: Usa la función t() para el título */}
+                  {t(`blogData.${post._id}.title`).slice(0, 40)}...
                 </Link>
               </h5>
             </div>

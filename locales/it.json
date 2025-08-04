@@ -116,7 +116,7 @@
     "title": "Installazione Professionale di Cartongesso per Interni Eleganti",
     "metadata_title": "Pagina Dettagli Blog - Solid SaaS Boilerplate",
     "metadata_description": "Questa è la pagina dei dettagli del blog per Solid Pro",
-    "author": "Autore:",
+    "": "Autore:",
     "body_p1": "Miglioriamo l'estetica e la funzionalità di soffitti e pareti con soluzioni in cartongesso adattate ai tuoi spazi.",
     "body_p2": "Il cartongesso è una tecnica versatile per creare forme, controsoffitti e divisioni interne. Nei nostri lavori curiamo ogni dettaglio, offrendo finiture precise ed eleganti. Dalle modanature classiche ai design minimalisti, adattiamo il cartongesso a ogni stile di casa o attività commerciale."
   },
@@ -124,7 +124,7 @@
   
   "blogDetails_2": {
     "title": "Servizi di Pittura Professionale",
-    "author": "Autore:",
+    "": "Autore:",
     "body_p1": "Dipingiamo spazi residenziali e commerciali con finiture lisce o texturizzate.",
     "body_p2": "Utilizziamo vernici di alta qualità per ottenere risultati duraturi, eleganti e personalizzati per ogni ambiente."
   
@@ -132,7 +132,7 @@
 
   "blogDetails_3": {
     "title": "Applicazione di Resina e Microcemento",
-    "author": "Autore:",
+    "": "Autore:",
     "body_p1": "Soluzioni moderne per bagni, cucine e scale.",
     "body_p2": "La resina e il microcemento offrono eleganza, resistenza e facile manutenzione senza giunti visibili."
   },
@@ -140,7 +140,7 @@
   
   "blogDetails_4": {
     "title": "Lavori di Muratura e Ristrutturazioni Generali",
-    "author": "Autore:",
+    "": "Autore:",
     "body_p1": "Lavori di muratura per la costruzione, ristrutturazione e il rinforzo delle strutture.",
     "body_p2": "Ristrutturazioni personalizzate con materiali durevoli e attenzione ai dettagli."
   },
@@ -148,14 +148,14 @@
   
   "blogDetails_5": {
     "title": "Stucco Veneziano: Lusso e Distinzione",
-    "author": "Autore:",
+    "": "Autore:",
     "body_p1": "Rivestimenti artigianali che riflettono la luce e impreziosiscono le superfici.",
     "body_p2": "Ideali per spazi sofisticati come salotti e scale."
   },
 
   "blogDetails_6": {
     "title": "Manutenzione Generale e Climatizzazione",
-    "author": "Autore:",
+    "": "Autore:",
     "body_p1": "Installazioni elettriche, idraulica, climatizzazione e manutenzione integrale della casa.",
     "body_p2": "Servizio agile, professionale e affidabile per garantire il buon funzionamento del tuo spazio."
   },

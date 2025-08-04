@@ -1,4 +1,4 @@
-export type Author = {
+export type  = {
   name: string;
   image: string;
   bio?: string;
@@ -13,7 +13,7 @@ export type Blog = {
   metadata?: string;
   body?: string;
   mainImage?: any;
-  author?: Author;
+  ?: ;
   tags?: string[];
   publishedAt?: string;
 };
