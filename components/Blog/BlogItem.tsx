@@ -4,11 +4,12 @@ import { Blog } from "@/types/blog";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from '@/components/providers/LanguageProvider'; // Importa el hook de idioma
 
 const BlogItem = ({ blog }: { blog: Blog }) => {
-  const { _id, mainImage, title, metadata } = blog;
+  const { t } = useLanguage(); // Inicializa el hook
+  const { _id, mainImage } = blog;
   
-
   const blogRoutes: Record<number, string> = {
     1: "/blog/blog-details",
     2: "/blog/blog-details-2",
@@ -19,6 +20,8 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
   };
 
   const detailLink = blogRoutes[_id] || "#";
+  const translatedTitle = t(`blogData.${_id}.title`); // Obtiene el título traducido
+  const translatedMetadata = t(`blogData.${_id}.metadata`); // Obtiene la metadata traducida
 
   return (
     <motion.div
@@ -34,15 +37,15 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
     >
       <Link href={detailLink}>
         <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
-          <Image src={mainImage} alt={title} width={36} height={36} />
+          <Image src={mainImage} alt={translatedTitle} width={36} height={36} />
         </div>
 
         <h3 className="mb-3 mt-7.5 text-lg font-semibold text-black dark:text-white xl:text-itemtitle2">
-          {title.slice(0, 50)}...
+          {translatedTitle.slice(0, 50)}...
         </h3>
 
         <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
-          {metadata}
+          {translatedMetadata}
         </p>
       </Link>
     </motion.div>

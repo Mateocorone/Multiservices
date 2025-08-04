@@ -158,7 +158,46 @@
     "author": "Autore:",
     "body_p1": "Installazioni elettriche, idraulica, climatizzazione e manutenzione integrale della casa.",
     "body_p2": "Servizio agile, professionale e affidabile per garantire il buon funzionamento del tuo spazio."
+  },
+
+  "blogData": {
+  "1": {
+    "title": "Installazione di Cartongesso per Interni",
+    "metadata": "Modernizziamo soffitti e pareti usando il cartongesso, ideale per creare ambienti accoglienti, controsoffitti o eleganti divisioni. Design pulito e professionale."
+  },
+  "2": {
+    "title": "Pittura Professionale per Ambienti",
+    "metadata": "Dipingiamo spazi residenziali e commerciali con finiture lisce o texturizzate. Utilizziamo vernici di alta qualità per risultati duraturi ed estetici."
+  },
+  "3": {
+    "title": "Applicazione di Resina e Microcemento",
+    "metadata": "Soluzioni moderne per bagni, cucine e scale. Resina e microcemento offrono eleganza, resistenza e facile manutenzione, senza giunti visibili."
+  },
+  "4": {
+    "title": "Lavori di Muratura e Ristrutturazioni Generali",
+    "metadata": "Lavori di muratura per la costruzione, ristrutturazione e il rinforzo delle strutture. Ristrutturazioni personalizzate con materiali durevoli e dettagli di qualità."
+  },
+  "5": {
+    "title": "Stucco Veneziano: Lusso e Distinzione",
+    "metadata": "Rivestimenti artigianali che riflettono la luce e trasformano le pareti in superfici eleganti, ideali per scale e salotti con stile sofisticato."
+  },
+  "6": {
+    "title": "Manutenzione Generale e Climatizzazione",
+    "metadata": "Soluzioni per la casa: installazioni elettriche, aria condizionata, idraulica e manutenzione preventiva. Servizio agile, professionale e affidabile."
   }
+},
+
+"footer": {
+  "description": "Esperti in ristrutturazioni, pittura, climatizzazione e manutenzione generale.",
+  "contact_title": "CONTATTO",
+  "navigation_title": "Navigazione",
+  "navigation_home": "Home",
+  "navigation_services": "Servizi",
+  "navigation_contact": "Contatto",
+  "info_title": "Informazioni",
+  "info_about": "Chi siamo",
+  "info_blog": "Blog"
+}
 
 
 

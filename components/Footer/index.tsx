@@ -1,8 +1,13 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from '@/components/providers/LanguageProvider';
+import Link from 'next/link';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -39,11 +44,11 @@ const Footer = () => {
               </a>
 
               <p className="mb-10 mt-5 text-black dark:text-white">
-                Expertos en reformas, pintura, climatización y mantenimiento general.
+                {t('footer.description')}
               </p>
 
               <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                contacto
+                {t('footer.contact_title')}
               </p>
               <a
                 href="mailto:contacto@tusitio.com"
@@ -65,12 +70,12 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                  Navegación
+                  {t('footer.navigation_title')}
                 </h4>
                 <ul>
-                  <li><a href="/inicio" className="mb-3 inline-block hover:text-primary">Inicio</a></li>
-                  <li><a href="/servicios" className="mb-3 inline-block hover:text-primary">Servicios</a></li>
-                  <li><a href="/contacto" className="mb-3 inline-block hover:text-primary">Contacto</a></li>
+                  <li><Link href="/inicio" className="mb-3 inline-block hover:text-primary">{t('footer.navigation_home')}</Link></li>
+                  <li><Link href="/servicios" className="mb-3 inline-block hover:text-primary">{t('footer.navigation_services')}</Link></li>
+                  <li><Link href="/contacto" className="mb-3 inline-block hover:text-primary">{t('footer.navigation_contact')}</Link></li>
                 </ul>
               </motion.div>
 
@@ -84,25 +89,12 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                  Información
+                  {t('footer.info_title')}
                 </h4>
                 <ul>
-                  <li><a href="/quienes-somos" className="mb-3 inline-block hover:text-primary">Quiénes somos</a></li>
-                  <li><a href="/blog" className="mb-3 inline-block hover:text-primary">Blog</a></li>
+                  <li><Link href="/quienes-somos" className="mb-3 inline-block hover:text-primary">{t('footer.info_about')}</Link></li>
+                  <li><Link href="/blog" className="mb-3 inline-block hover:text-primary">{t('footer.info_blog')}</Link></li>
                 </ul>
-              </motion.div>
-
-              {/* Newsletter */}
-              <motion.div
-                variants={{ hidden: { opacity: 0, y: -20 }, visible: { opacity: 1, y: 0 } }}
-                initial="hidden"
-                whileInView="visible"
-                transition={{ duration: 1, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="animate_top"
-              >
-                
-                   
               </motion.div>
             </div>
           </div>
@@ -118,7 +110,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top"
           >
-           
+            {/* Aquí puedes añadir el texto de copyright si lo tienes */}
           </motion.div>
 
           <motion.div
@@ -129,9 +121,8 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top text-black dark:text-white"
           >
+            {/* Aquí van los iconos sociales, si los tienes */}
           </motion.div>
-
-          {/* Socials sin cambios, los mantienes igual o puedes pedirme una actualización */}
         </div>
       </div>
     </footer>

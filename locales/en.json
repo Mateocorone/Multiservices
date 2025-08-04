@@ -160,7 +160,46 @@
     "author": "Author:",
     "body_p1": "Electrical installations, plumbing, air conditioning, and comprehensive home maintenance.",
     "body_p2": "Agile, professional, and reliable service to ensure the proper functioning of your space."
+  },
+
+  "blogData": {
+  "1": {
+    "title": "Drywall Installation for Interiors",
+    "metadata": "We modernize ceilings and walls using drywall, ideal for creating cozy environments, false ceilings, or elegant divisions. Clean and professional design."
+  },
+  "2": {
+    "title": "Professional Interior Painting",
+    "metadata": "We paint residential and commercial spaces with smooth or textured finishes. We use high-quality paints for durable and aesthetic results."
+  },
+  "3": {
+    "title": "Resin and Microcement Application",
+    "metadata": "Modern solutions for bathrooms, kitchens, and stairs. Resin and microcement provide elegance, durability, and easy maintenance, without visible joints."
+  },
+  "4": {
+    "title": "Masonry and General Renovation Works",
+    "metadata": "Masonry work for construction, remodeling, and structural reinforcement. Custom renovations with durable materials and quality details."
+  },
+  "5": {
+    "title": "Venetian Stucco: Luxury and Distinction",
+    "metadata": "Artisanal coatings that reflect light and transform walls into elegant surfaces, ideal for stairs and sophisticated living rooms."
+  },
+  "6": {
+    "title": "General Maintenance and Climate Control",
+    "metadata": "Home solutions: electrical installations, air conditioning, plumbing, and preventive maintenance. Agile, professional, and reliable service."
   }
+},
+
+"footer": {
+  "description": "Experts in renovations, painting, air conditioning, and general maintenance.",
+  "contact_title": "CONTACT",
+  "navigation_title": "Navigation",
+  "navigation_home": "Home",
+  "navigation_services": "Services",
+  "navigation_contact": "Contact",
+  "info_title": "Information",
+  "info_about": "About Us",
+  "info_blog": "Blog"
+}
 
 
 

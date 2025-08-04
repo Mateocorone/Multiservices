@@ -160,8 +160,46 @@
     "author": "Autor:",
     "body_p1": "Instalaciones eléctricas, fontanería, climatización y mantenimiento integral del hogar.",
     "body_p2": "Servicio ágil, profesional y confiable para garantizar el buen funcionamiento de tu espacio."
-  }
+  },
 
+  "blogData": {
+  "1": {
+    "title": "Instalación de Cartongesso en Interiores",
+    "metadata": "Modernizamos techos y paredes usando cartongesso, ideal para crear ambientes acogedores, falsos techos o divisiones elegantes. Diseño limpio y profesional."
+  },
+  "2": {
+    "title": "Pintura Profesional de Ambientes",
+    "metadata": "Pintamos espacios residenciales y comerciales con acabados lisos o texturizados. Utilizamos pinturas de alta calidad para resultados duraderos y estéticos."
+  },
+  "3": {
+    "title": "Aplicación de Resina y Microcemento",
+    "metadata": "Soluciones modernas para baños, cocinas y escaleras. La resina y el microcemento aportan elegancia, resistencia y fácil mantenimiento, sin juntas visibles."
+  },
+  "4": {
+    "title": "Obras de Muratura y Reformas Generales",
+    "metadata": "Trabajos de albañilería para construcción, remodelación y refuerzo de estructuras. Reformas personalizadas con materiales duraderos y detalles de calidad."
+  },
+  "5": {
+    "title": "Estuco Veneziano: Lujo y Distinción",
+    "metadata": "Revestimientos artesanales que reflejan la luz y transforman las paredes en superficies elegantes, ideales para escaleras y salones con estilo sofisticado."
+  },
+  "6": {
+    "title": "Mantenimiento General y Climatización",
+    "metadata": "Soluciones para el hogar: instalaciones eléctricas, aire acondicionado, fontanería y mantenimiento preventivo. Servicio ágil, profesional y confiable."
+  }
+},
+
+"footer": {
+  "description": "Expertos en reformas, pintura, climatización y mantenimiento general.",
+  "contact_title": "CONTACTO",
+  "navigation_title": "Navegación",
+  "navigation_home": "Inicio",
+  "navigation_services": "Servicios",
+  "navigation_contact": "Contacto",
+  "info_title": "Información",
+  "info_about": "Quiénes somos",
+  "info_blog": "Blog"
+}
 
 
 }
