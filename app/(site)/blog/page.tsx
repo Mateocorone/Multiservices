@@ -1,28 +1,25 @@
-import BlogData from "@/components/Blog/blogData";
-import BlogItem from "@/components/Blog/BlogItem";
-import { Metadata } from "next";
+import RelatedPost from "@/components/Blog/RelatedPost";
+import Image from "next/image";
+import BlogContent6 from "./BlogContent6"; // Importa el nuevo componente de cliente
 
-export const metadata: Metadata = {
-  title: "Galería | ReparaYa ",
-  description: "Descubre artículos, noticias y consejos útiles sobre reformas, pintura, microcemento, mantenimiento del hogar y más en el blog de ReparaYa.",
-};
-
-const BlogPage =  () => {
+const Page = () => {
   return (
-    <>
-      {/* <!-- ===== Blog Grid Start ===== --> */}
-      <section className="py-20 lg:py-25 xl:py-30">
-        <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
-          <div className="grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:grid-cols-3 xl:gap-10">
-            {BlogData.map((post, key) => (
-              <BlogItem key={key} blog={post} />
-            ))}
+    <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
+      <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+        <div className="flex flex-col lg:flex-row gap-12.5">
+          {/* Contenido principal del blog, ahora en su propio componente */}
+          <div className="w-full lg:w-2/3 mx-auto">
+            <BlogContent6 />
+          </div>
+
+          {/* Related Posts en el costado derecho */}
+          <div className="w-full lg:w-1/3">
+            <RelatedPost />
           </div>
         </div>
-      </section>
-      {/* <!-- ===== Blog Grid End ===== --> */}
-    </>
+      </div>
+    </section>
   );
 };
 
-export default BlogPage;
+export default Page;
