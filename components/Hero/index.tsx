@@ -1,70 +1,57 @@
 "use client";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { useLanguage } from '@/components/providers/LanguageProvider'; // Importa el hook de idioma
+import { useLanguage } from "@/components/providers/LanguageProvider";
 
 const Hero = () => {
-  const [email, setEmail] = useState("");
-  const { t } = useLanguage(); // Obtiene la función de traducción
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-  };
+  const { t } = useLanguage();
 
   return (
-    <motion.section
+    <section
       id="hero-section"
-      className="relative flex items-center justify-center text-center py-32 px-4
-      bg-white dark:bg-black overflow-hidden"
-      style={{
-        backgroundImage: "url('/images/mdf.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-      // className="relative flex items-center justify-center text-center py-32 px-4
-      // bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 
-      // dark:from-blue-900 dark:via-indigo-900 dark:to-purple-900"
-      
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ amount: 0.2 }}
+      className="
+        relative flex items-center justify-center
+        py-32 px-6
+        bg-[#F1F3F5]
+      "
     >
-      {/* Overlay/filtro para contraste */}
-      <div className="absolute inset-0 bg-white/80 dark:bg-black/70  "></div>
+      <div className="mx-auto max-w-5xl text-center">
+        {/* Eyebrow */}
+        <p className="mb-4 text-sm font-medium tracking-wide uppercase text-[#6B7280]">
+          Automatización de servicios
+        </p>
 
-      <div className="relative z-10 max-w-4xl mx-auto">
-        <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-          {t('hero.subtitle')}
-        </h4>
-        <h1 className="mb-6 text-4xl sm:text-5xl font-extrabold text-black dark:text-white">
-          {t('hero.title_part1')}{" "}
-          <span className="relative inline-block">
-            {t('hero.title_part2')}{" "}
-            <span className="relative inline-block before:absolute before:bottom-1 before:left-0 before:-z-1 before:h-4 before:w-full before:rounded-md before:bg-blue-200 dark:before:bg-blue-500">
-              {t('hero.title_part3')}
-            </span>
-          </span>
+        {/* Title */}
+        <h1 className="mb-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-[#111827]">
+          Automatiza tus procesos <br />
+          <span className="text-[#111827]">con flujos confiables</span>
         </h1>
 
-        <p className="mb-5 text-lg text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
-          {t('hero.description')}
+        {/* Description */}
+        <p className="mx-auto mb-10 max-w-2xl text-lg text-[#4B5563]">
+          Diseñamos flujos de automatización que conectan tus herramientas,
+          eliminan tareas manuales y aportan orden, control y escalabilidad
+          a tu negocio.
         </p>
 
-        <a
-          href="https://wa.me/593999999999?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20servicios"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block mt-5 rounded-full bg-blue-600 px-7 py-3 font-semibold text-white hover:bg-blue-700 transition"
-        >
-          {t('hero.button')}
-        </a>
-
-        <p className="mt-6 text-black dark:text-white">
-          {t('hero.cta')}
-        </p>
+        {/* CTA */}
+        <div className="flex justify-center">
+          <a
+            href="https://wa.me/593999999999"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              rounded-full
+              bg-[#E5E7EB]
+              px-8 py-3
+              font-semibold
+              text-[#111827]
+              transition hover:bg-[#D1D5DB]
+            "
+          >
+            Solicitar asesoría
+          </a>
+        </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

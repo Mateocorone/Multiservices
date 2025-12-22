@@ -1,52 +1,35 @@
 "use client";
 import { motion } from "framer-motion";
-import { useLanguage } from '@/components/providers/LanguageProvider';
-
-// Elimina la definición del tipo HeaderInfo y el prop headerInfo
-// type HeaderInfo = {
-//   title: string;
-//   subtitle: string;
-//   description: string;
-// };
-
-// const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
-//   const { title, subtitle, description } = headerInfo;
+import { useLanguage } from "@/components/providers/LanguageProvider";
 
 const SectionHeader = () => {
   const { t } = useLanguage();
 
   return (
-    <>
-      {/* */}
-      <motion.div
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: -20,
-          },
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ duration: 1, delay: 0.1 }}
-        viewport={{ once: true }}
-        className="animate_top mx-auto text-center"
-      >
-        <div className="mb-4 inline-block rounded-full bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection">
-          <span className="text-sectiontitle font-medium text-black dark:text-white">
-            {t('header.title')}
-          </span>
-        </div>
-        <h2 className="mx-auto mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3">
-          {t('header.subtitle')}
-        </h2>
-        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{t('header.description')}</p>
-      </motion.div>
-      {/* */}
-    </>
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      className="mx-auto mb-12 text-center"
+    >
+      {/* Badge */}
+      <div className="mb-4 inline-block rounded-full bg-[#1F2937] px-4 py-1.5">
+        <span className="text-sm font-medium tracking-wide text-[#E5E7EB]">
+          {t("header.title")}
+        </span>
+      </div>
+
+      {/* Title */}
+      <h2 className="mx-auto mb-4 max-w-3xl text-3xl font-bold text-[#F9FAFB] md:text-4xl">
+        {t("header.subtitle")}
+      </h2>
+
+      {/* Description */}
+      <p className="mx-auto max-w-2xl text-base text-[#94A3B8]">
+        {t("header.description")}
+      </p>
+    </motion.div>
   );
 };
 

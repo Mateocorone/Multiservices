@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`flex flex-col min-h-screen dark:bg-black ${inter.className}`}>
+      <body className={`flex flex-col min-h-screen bg-[#0B0F14] dark:bg-black ${inter.className}`}>
         <AppProviders>
           <Lines />
           <Header />

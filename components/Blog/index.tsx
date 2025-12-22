@@ -1,43 +1,33 @@
 "use client";
-import React from "react"; // Mantén la importación de React
+import React from "react";
 import SectionHeader from "../Common/SectionHeader";
 import BlogItem from "./BlogItem";
 import BlogData from "./blogData";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/components/providers/LanguageProvider";
 
-// CAMBIO CRÍTICO: Elimina 'async' de la definición del componente
 const Blog = () => {
-  return (
-    <motion.section
-      id="blog-section"
-      className="py-20 lg:py-25 xl:py-30"
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ amount: 0.2 }}
-    >
-      <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-        {/* */}
-        <div className="animate_top mx-auto text-center">
-          <SectionHeader
-            // headerInfo={{
-            //   title: `Galería`,
-            //   subtitle: `Descubre algunos de nuestros trabajos recientes`,
-            //   description: `Transformamos espacios con acabados modernos, elegantes y funcionales. Mira cómo lo hacemos realidad.`,
-            // }}
-          />
-        </div>
-        {/* */}
-      </div>
+  const { t } = useLanguage();
 
-      <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
-        <div className="grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:grid-cols-3 xl:gap-10">
-          {BlogData.slice(0, 3).map((blog, key) => (
-            <BlogItem blog={blog} key={key} />
+  return (
+    <section id="use-cases" className="py-28 bg-white">
+      <div className="mx-auto max-w-6xl px-6">
+        <SectionHeader
+      
+        />
+
+        <motion.div
+          className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          {BlogData.slice(0, 3).map((blog) => (
+            <BlogItem key={blog._id} blog={blog} />
           ))}
-        </div>
+        </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 
