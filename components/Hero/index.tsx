@@ -15,8 +15,15 @@ const Hero = () => {
     <motion.section
       id="hero-section"
       className="relative flex items-center justify-center text-center py-32 px-4
-      bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 
-      dark:from-blue-900 dark:via-indigo-900 dark:to-purple-900"
+      bg-white dark:bg-black overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/mdf.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      // className="relative flex items-center justify-center text-center py-32 px-4
+      // bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 
+      // dark:from-blue-900 dark:via-indigo-900 dark:to-purple-900"
       
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -24,7 +31,7 @@ const Hero = () => {
       viewport={{ amount: 0.2 }}
     >
       {/* Overlay/filtro para contraste */}
-      <div className="absolute inset-0 bg-white/80 dark:bg-black/70 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-white/80 dark:bg-black/70  "></div>
 
       <div className="relative z-10 max-w-4xl mx-auto">
         <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
